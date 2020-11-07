@@ -64,6 +64,6 @@ export class AppComponent {
   }
 
   customCompare(o1: IItem, o2: IItem) {
-    return o1.id == o2.id;
+    return o1.id === o2.id;
   }
 }
