@@ -1,0 +1,28 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 500px;
+	margin: auto;
+	align-items: center;
+	.buttons-container {
+		display: flex;
+		flex-direction: column;
+		button {
+			margin: 5px;
+		}
+	}
+	select {
+		width: 100%;
+		height: 300px;
+		border: 1px solid #ccc;
+		padding: 10px;
+		option {
+			padding: 10px;
+		}
+	}
+	.list1,
+	.list2 {
+		flex: 1;
+		margin: 10px;
+	}
+}

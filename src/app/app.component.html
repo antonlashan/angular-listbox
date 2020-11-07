@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="list1">
+    <select multiple [(ngModel)]="selectedList1" [compareWith]="customCompare">
+      <option *ngFor="let item of list1" [ngValue]="item">
+        {{ item.name }}
+      </option>
+    </select>
+  </div>
+
+  <div class="buttons-container">
+    <button (click)="moveSelected('right')">></button>
+    <button (click)="moveAll('right')">>></button>
+    <button (click)="moveSelected('left')"><</button>
+    <button (click)="moveAll('left')"><<</button>
+  </div>
+
+  <div class="list2">
+    <select multiple [(ngModel)]="selectedList2" [compareWith]="customCompare">
+      <option selected *ngFor="let item of list2" [ngValue]="item">
+        {{ item.name }}
+      </option>
+    </select>
+  </div>
+</div>
